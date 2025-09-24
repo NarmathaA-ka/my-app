@@ -1,3 +1,7 @@
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'us-central1-docker.pkg.dev/app-dev-473106/dev-repo/my-app:$COMMIT_SHA', '.']
